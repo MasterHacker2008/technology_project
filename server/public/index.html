@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flood Barrier</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <img id="topGear" src="./assets/gear.svg" alt="">
+    <div class="container">
+      <h1>Flood <span class="barrier">Barrier</span></h1>
+      
+
+      <div class="main">
+        <div class="left">
+          <div>
+            <h2>Flood Barrier</h2>
+
+            <div class="row">
+              <p>Deploy barrier</p>
+              <label class="switch">
+                <input id="deployToggle" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <div class="row">
+              <p>Auto-Deploy</p>
+              <label class="switch">
+                <input id="autoDeployToggle" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <p>Status: <span id="barrierStatus" class="green-text"></span></p>
+          </div>
+
+          <div><img src="./assets/flood.svg" alt="barrier" /></div>
+
+        </div>
+        <div class="right">
+          <div>
+            <h2>Flood Sensor</h2>
+            <p>Status: <span id="sensorStatus" class="green-text"></span></p>
+            <p>Water Level: <span id="waterLevel">--</span></p>
+            <!-- <p>Set Distance Trigger:</p>
+            <div class="row">
+               <input type="number" id="levelInput" value="5" />
+              <button id="setLevelButton">Set</button>
+            </div> -->
+          </div>
+          <div><img src="./assets/sensor.svg" alt="sensor" /></div>
+        </div>
+      </div>
+    </div>
+    <img id="bottomGear" src="./assets/gear.svg" alt="">
+  </body>
+</html>
